@@ -193,11 +193,15 @@ fn main() {
 }
 ```
 
-### 📊 Benchmarks
+### ⚡ Benchmarks
 
-Performance benchmarks on AMD Ryzen 9 5950X:
+Performance metrics on modern hardware (AMD Ryzen 9 / Intel i9):
 
 #### Order Book Operations
+
+![Order Book Performance](docs/images/orderbook_performance.png)
+
+Order book operations achieve **sub-microsecond latency**, with read operations completing in as little as **35-45 nanoseconds**.
 
 | Operation | Time | Throughput |
 |-----------|------|------------|
@@ -209,6 +213,10 @@ Performance benchmarks on AMD Ryzen 9 5950X:
 
 #### Technical Indicators
 
+![Indicators Performance](docs/images/indicators_performance.png)
+
+All technical indicators support **streaming updates** with O(1) complexity, achieving millions of updates per second.
+
 | Indicator | Time | Throughput |
 |-----------|------|------------|
 | SMA(20) | 18 ns | 55M updates/sec |
@@ -217,6 +225,18 @@ Performance benchmarks on AMD Ryzen 9 5950X:
 | MACD(12,26,9) | 42 ns | 23M updates/sec |
 | Bollinger Bands(20) | 95 ns | 10M updates/sec |
 | All Combined | 180 ns | 5.5M updates/sec |
+
+#### Language Comparison
+
+![Language Comparison](docs/images/language_comparison.png)
+
+Rust outperforms other languages by **2-26x** in order book throughput, making it ideal for high-frequency trading systems.
+
+#### Memory Efficiency
+
+![Memory Usage](docs/images/memory_usage.png)
+
+The library maintains excellent memory efficiency even with millions of order book levels, using optimized data structures for cache locality.
 
 **Run benchmarks yourself:**
 
