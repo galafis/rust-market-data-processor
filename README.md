@@ -17,6 +17,22 @@
 
 Built with **zero-cost abstractions** and **memory safety** guarantees, this library is production-ready for high-frequency trading (HFT) and algorithmic trading systems.
 
+```mermaid
+flowchart LR
+    A[Raw Feed\nWebSocket / FIX] --> B[Parse\nMessage Decoding]
+    B --> C[Validate\nSchema & Integrity]
+    C --> D[Transform\nNormalize & Enrich]
+    D --> E[Aggregate\nOrder Book / OHLCV]
+    E --> F[Output\nIndicators & Signals]
+
+    style A fill:#1a1a2e,stroke:#e94560,color:#fff
+    style B fill:#16213e,stroke:#0f3460,color:#fff
+    style C fill:#0f3460,stroke:#533483,color:#fff
+    style D fill:#533483,stroke:#e94560,color:#fff
+    style E fill:#16213e,stroke:#e94560,color:#fff
+    style F fill:#1a1a2e,stroke:#e94560,color:#fff
+```
+
 ### ✨ Key Features
 
 #### ⚡ Ultra-High Performance
