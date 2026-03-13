@@ -2,6 +2,7 @@
 
 [![Rust](https://img.shields.io/badge/Rust-1.90-orange.svg)](https://www.rust-lang.org/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg?logo=docker)](Dockerfile)
 [![Performance](https://img.shields.io/badge/Performance-Ultra%20Fast-brightgreen.svg)](#benchmarks)
 [![Tests](https://img.shields.io/badge/Tests-Passing-brightgreen.svg)](#testing)
 
